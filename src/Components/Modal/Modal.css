@@ -1,0 +1,71 @@
+.ModalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CreateTodoForm form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 420px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.CreateTodoForm textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  resize: vertical;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.CreateTodoForm textarea:focus {
+  outline: none;
+  border-color: #61dafa;
+  box-shadow: 0 0 0 3px rgba(97, 218, 250, 0.25);
+}
+
+.CreateTodoForm button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.CreateTodoForm button[type="submit"] {
+  background: #61dafa;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(97, 218, 250, 0.5);
+}
+
+.CreateTodoForm button[type="button"] {
+  background: #f0f0f0;
+  color: #555;
+}
+
+.CreateTodoForm button:hover {
+  transform: translateY(-2px);
+}
